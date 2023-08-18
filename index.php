@@ -10,9 +10,14 @@ require_once("config.php");
 // $usuario->login("bug","123");
 // echo $usuario;
 
-$aluno = new Usuario("alunonovo","@luno");
-$aluno->insert();
+// $aluno = new Usuario("alunonovo","@luno");
+// $aluno->insert();
 
-$aluno->update("trem","foi");
-echo $aluno;
+// $aluno->update("trem","foi");
+// echo $aluno;
+
+$root = new Usuario();
+$root->loadById(7);
+echo $root;
+$root->delete();
 ?>
